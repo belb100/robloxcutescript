@@ -1,24 +1,24 @@
 -- // GUI TO LUA \\ --
 
--- // INSTANCES: 103 | SCRIPTS: 23 | MODULES: 0 \\ --
+-- // INSTANCES: 112 | SCRIPTS: 23 | MODULES: 0 \\ --
 
 local UI = {}
 
--- // StarterGui.Dox ur self \\ --
+-- // StarterGui.mobile ver \\ --
 UI["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
-UI["1"]["Name"] = [[Dox ur self]]
+UI["1"]["Name"] = [[mobile ver]]
 UI["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
 UI["1"]["ResetOnSpawn"] = false
 
--- // StarterGui.Dox ur self.Frame \\ --
+-- // StarterGui.mobile ver.Frame \\ --
 UI["2"] = Instance.new("Frame", UI["1"])
 UI["2"]["BorderSizePixel"] = 0
 UI["2"]["BackgroundColor3"] = Color3.fromRGB(63, 63, 63)
-UI["2"]["Size"] = UDim2.new(0, 746, 0, 400)
-UI["2"]["Position"] = UDim2.new(0, 266, 0, 179)
+UI["2"]["Size"] = UDim2.new(0.45048, 0, 0.50251, 0)
+UI["2"]["Position"] = UDim2.new(0.16063, 0, 0.22487, 0)
 UI["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 
--- // StarterGui.Dox ur self.Frame.Credits \\ --
+-- // StarterGui.mobile ver.Frame.Credits \\ --
 UI["3"] = Instance.new("TextLabel", UI["2"])
 UI["3"]["BorderSizePixel"] = 0
 UI["3"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
@@ -29,20 +29,21 @@ UI["3"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 UI["3"]["BackgroundTransparency"] = 1
 UI["3"]["Size"] = UDim2.new(0, 200, 0, 50)
 UI["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["3"]["Text"] = [[by belb,special for avtor scripts]]
+UI["3"]["Text"] = [[by belb,special editon for avtor scripts]]
 UI["3"]["Name"] = [[Credits]]
-UI["3"]["Position"] = UDim2.new(-0.06971, 0, 0.0525, 0)
+UI["3"]["Position"] = UDim2.new(0.19169, 0, 0.0375, 0)
 
--- // StarterGui.Dox ur self.Frame.Credits.UIStroke \\ --
+-- // StarterGui.mobile ver.Frame.Credits.UIStroke \\ --
 UI["4"] = Instance.new("UIStroke", UI["3"])
 
 
--- // StarterGui.Dox ur self.Frame.Location \\ --
+-- // StarterGui.mobile ver.Frame.Location \\ --
 UI["5"] = Instance.new("TextButton", UI["2"])
 UI["5"]["TextWrapped"] = true
 UI["5"]["BorderSizePixel"] = 0
 UI["5"]["TextSize"] = 34
 UI["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5"]["TextScaled"] = true
 UI["5"]["BackgroundColor3"] = Color3.fromRGB(73, 73, 73)
 UI["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 UI["5"]["Size"] = UDim2.new(0, 172, 0, 50)
@@ -51,7 +52,7 @@ UI["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 UI["5"]["Text"] = [[]]
 UI["5"]["Position"] = UDim2.new(0.01743, 0, 0.3275, 0)
 
--- // StarterGui.Dox ur self.Frame.Location.TextLabel \\ --
+-- // StarterGui.mobile ver.Frame.Location.TextLabel \\ --
 UI["6"] = Instance.new("TextLabel", UI["5"])
 UI["6"]["BorderSizePixel"] = 0
 UI["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
@@ -64,11 +65,11 @@ UI["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 UI["6"]["Text"] = [[Location]]
 UI["6"]["Position"] = UDim2.new(0.10465, 0, 0, 0)
 
--- // StarterGui.Dox ur self.Frame.Location.TextLabel.UIStroke \\ --
+-- // StarterGui.mobile ver.Frame.Location.TextLabel.UIStroke \\ --
 UI["7"] = Instance.new("UIStroke", UI["6"])
 
 
--- // StarterGui.Dox ur self.Frame.Location.ImageLabel \\ --
+-- // StarterGui.mobile ver.Frame.Location.ImageLabel \\ --
 UI["8"] = Instance.new("ImageLabel", UI["5"])
 UI["8"]["BorderSizePixel"] = 0
 UI["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
@@ -78,246 +79,218 @@ UI["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 UI["8"]["BackgroundTransparency"] = 1
 UI["8"]["Position"] = UDim2.new(0, 0, 0.2, 0)
 
--- // StarterGui.Dox ur self.Frame.Location.UIStroke \\ --
+-- // StarterGui.mobile ver.Frame.Location.UIStroke \\ --
 UI["9"] = Instance.new("UIStroke", UI["5"])
 UI["9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
 UI["9"]["Thickness"] = 2.7
 
--- // StarterGui.Dox ur self.Frame.Location.UIStroke.LocalScript \\ --
+-- // StarterGui.mobile ver.Frame.Location.UIStroke.LocalScript \\ --
 UI["a"] = Instance.new("LocalScript", UI["9"])
 
 
--- // StarterGui.Dox ur self.Frame.Location.UIStroke \\ --
+-- // StarterGui.mobile ver.Frame.Location.UIStroke \\ --
 UI["b"] = Instance.new("UIStroke", UI["5"])
 
 
--- // StarterGui.Dox ur self.Frame.Location.LocalScript \\ --
+-- // StarterGui.mobile ver.Frame.Location.LocalScript \\ --
 UI["c"] = Instance.new("LocalScript", UI["5"])
 
 
--- // StarterGui.Dox ur self.Frame.Connection \\ --
-UI["d"] = Instance.new("TextButton", UI["2"])
-UI["d"]["BorderSizePixel"] = 0
-UI["d"]["TextSize"] = 30
-UI["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["d"]["BackgroundColor3"] = Color3.fromRGB(73, 73, 73)
-UI["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["d"]["Size"] = UDim2.new(0, 172, 0, 50)
-UI["d"]["Name"] = [[Connection]]
-UI["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["d"]["Text"] = [[]]
-UI["d"]["Position"] = UDim2.new(0.01743, 0, 0.485, 0)
+-- // StarterGui.mobile ver.Frame.Location.UITextSizeConstraint \\ --
+UI["d"] = Instance.new("UITextSizeConstraint", UI["5"])
+UI["d"]["MaxTextSize"] = 34
 
--- // StarterGui.Dox ur self.Frame.Connection.TextLabel \\ --
-UI["e"] = Instance.new("TextLabel", UI["d"])
+-- // StarterGui.mobile ver.Frame.Connection \\ --
+UI["e"] = Instance.new("TextButton", UI["2"])
+UI["e"]["TextWrapped"] = true
 UI["e"]["BorderSizePixel"] = 0
-UI["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["e"]["TextSize"] = 24
-UI["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["e"]["TextSize"] = 30
 UI["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["e"]["BackgroundTransparency"] = 1
+UI["e"]["TextScaled"] = true
+UI["e"]["BackgroundColor3"] = Color3.fromRGB(73, 73, 73)
+UI["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 UI["e"]["Size"] = UDim2.new(0, 172, 0, 50)
+UI["e"]["Name"] = [[Connection]]
 UI["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["e"]["Text"] = [[Connection]]
-UI["e"]["Position"] = UDim2.new(0.10465, 0, 0, 0)
+UI["e"]["Text"] = [[]]
+UI["e"]["Position"] = UDim2.new(0.01743, 0, 0.485, 0)
 
--- // StarterGui.Dox ur self.Frame.Connection.TextLabel.UIStroke \\ --
-UI["f"] = Instance.new("UIStroke", UI["e"])
+-- // StarterGui.mobile ver.Frame.Connection.TextLabel \\ --
+UI["f"] = Instance.new("TextLabel", UI["e"])
+UI["f"]["BorderSizePixel"] = 0
+UI["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["f"]["TextSize"] = 24
+UI["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["f"]["BackgroundTransparency"] = 1
+UI["f"]["Size"] = UDim2.new(0, 172, 0, 50)
+UI["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f"]["Text"] = [[Connection]]
+UI["f"]["Position"] = UDim2.new(0.10465, 0, 0, 0)
 
-
--- // StarterGui.Dox ur self.Frame.Connection.ImageLabel \\ --
-UI["10"] = Instance.new("ImageLabel", UI["d"])
-UI["10"]["BorderSizePixel"] = 0
-UI["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["10"]["ScaleType"] = Enum.ScaleType.Crop
-UI["10"]["Image"] = [[rbxassetid://104354622777932]]
-UI["10"]["Size"] = UDim2.new(0, 36, 0, 30)
-UI["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["10"]["BackgroundTransparency"] = 1
-UI["10"]["Position"] = UDim2.new(0, 0, 0.2, 0)
-
--- // StarterGui.Dox ur self.Frame.Connection.UIStroke \\ --
-UI["11"] = Instance.new("UIStroke", UI["d"])
+-- // StarterGui.mobile ver.Frame.Connection.TextLabel.UIStroke \\ --
+UI["10"] = Instance.new("UIStroke", UI["f"])
 
 
--- // StarterGui.Dox ur self.Frame.Connection.UIStroke \\ --
-UI["12"] = Instance.new("UIStroke", UI["d"])
-UI["12"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-UI["12"]["Thickness"] = 2.7
+-- // StarterGui.mobile ver.Frame.Connection.ImageLabel \\ --
+UI["11"] = Instance.new("ImageLabel", UI["e"])
+UI["11"]["BorderSizePixel"] = 0
+UI["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["11"]["ScaleType"] = Enum.ScaleType.Crop
+UI["11"]["Image"] = [[rbxassetid://104354622777932]]
+UI["11"]["Size"] = UDim2.new(0, 36, 0, 30)
+UI["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["11"]["BackgroundTransparency"] = 1
+UI["11"]["Position"] = UDim2.new(0, 0, 0.2, 0)
 
--- // StarterGui.Dox ur self.Frame.Connection.UIStroke.LocalScript \\ --
-UI["13"] = Instance.new("LocalScript", UI["12"])
-
-
--- // StarterGui.Dox ur self.Frame.Connection.LocalScript \\ --
-UI["14"] = Instance.new("LocalScript", UI["d"])
-
-
--- // StarterGui.Dox ur self.Frame.Title \\ --
-UI["15"] = Instance.new("TextLabel", UI["2"])
-UI["15"]["BorderSizePixel"] = 0
-UI["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["15"]["TextSize"] = 48
-UI["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["15"]["BackgroundTransparency"] = 1
-UI["15"]["Size"] = UDim2.new(0, 746, 0, 50)
-UI["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["15"]["Text"] = [[DOXBIN]]
-UI["15"]["Name"] = [[Title]]
-UI["15"]["Position"] = UDim2.new(-0.38472, 0, -0.0175, 0)
-
--- // StarterGui.Dox ur self.Frame.Title.UIStroke \\ --
-UI["16"] = Instance.new("UIStroke", UI["15"])
+-- // StarterGui.mobile ver.Frame.Connection.UIStroke \\ --
+UI["12"] = Instance.new("UIStroke", UI["e"])
 
 
--- // StarterGui.Dox ur self.Frame.It dox yourself. \\ --
+-- // StarterGui.mobile ver.Frame.Connection.UIStroke \\ --
+UI["13"] = Instance.new("UIStroke", UI["e"])
+UI["13"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["13"]["Thickness"] = 2.7
+
+-- // StarterGui.mobile ver.Frame.Connection.UIStroke.LocalScript \\ --
+UI["14"] = Instance.new("LocalScript", UI["13"])
+
+
+-- // StarterGui.mobile ver.Frame.Connection.LocalScript \\ --
+UI["15"] = Instance.new("LocalScript", UI["e"])
+
+
+-- // StarterGui.mobile ver.Frame.Connection.UITextSizeConstraint \\ --
+UI["16"] = Instance.new("UITextSizeConstraint", UI["e"])
+UI["16"]["MaxTextSize"] = 30
+
+-- // StarterGui.mobile ver.Frame.Title \\ --
 UI["17"] = Instance.new("TextLabel", UI["2"])
+UI["17"]["TextWrapped"] = true
 UI["17"]["BorderSizePixel"] = 0
+UI["17"]["TextScaled"] = true
 UI["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["17"]["TextSize"] = 16
+UI["17"]["TextSize"] = 48
 UI["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 UI["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 UI["17"]["BackgroundTransparency"] = 1
-UI["17"]["Size"] = UDim2.new(0, 200, 0, 50)
+UI["17"]["Size"] = UDim2.new(0, 746, 0, 50)
 UI["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["17"]["Text"] = [[(It doxes yourself.)]]
-UI["17"]["Name"] = [[It dox yourself.]]
-UI["17"]["Position"] = UDim2.new(0.7319, 0, 0.07, 0)
+UI["17"]["Text"] = [[DOXBIN]]
+UI["17"]["Name"] = [[Title]]
+UI["17"]["Position"] = UDim2.new(-0.38472, 0, -0.0175, 0)
 
--- // StarterGui.Dox ur self.Frame.TimeZone \\ --
-UI["18"] = Instance.new("TextButton", UI["2"])
-UI["18"]["BorderSizePixel"] = 0
-UI["18"]["TextSize"] = 34
-UI["18"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["18"]["BackgroundColor3"] = Color3.fromRGB(73, 73, 73)
-UI["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["18"]["Size"] = UDim2.new(0, 172, 0, 50)
-UI["18"]["Name"] = [[TimeZone]]
-UI["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["18"]["Text"] = [[]]
-UI["18"]["Position"] = UDim2.new(0.01743, 0, 0.6375, 0)
-
--- // StarterGui.Dox ur self.Frame.TimeZone.TextLabel \\ --
-UI["19"] = Instance.new("TextLabel", UI["18"])
-UI["19"]["BorderSizePixel"] = 0
-UI["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["19"]["TextSize"] = 27
-UI["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["19"]["BackgroundTransparency"] = 1
-UI["19"]["Size"] = UDim2.new(0, 172, 0, 50)
-UI["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["19"]["Text"] = [[Time Zone]]
-UI["19"]["Position"] = UDim2.new(0.10465, 0, 0, 0)
-
--- // StarterGui.Dox ur self.Frame.TimeZone.TextLabel.UIStroke \\ --
-UI["1a"] = Instance.new("UIStroke", UI["19"])
+-- // StarterGui.mobile ver.Frame.Title.UIStroke \\ --
+UI["18"] = Instance.new("UIStroke", UI["17"])
 
 
--- // StarterGui.Dox ur self.Frame.TimeZone.ImageLabel \\ --
-UI["1b"] = Instance.new("ImageLabel", UI["18"])
-UI["1b"]["BorderSizePixel"] = 0
-UI["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["1b"]["ScaleType"] = Enum.ScaleType.Fit
-UI["1b"]["Image"] = [[rbxassetid://74288638990698]]
-UI["1b"]["Size"] = UDim2.new(0, 36, 0, 30)
-UI["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["1b"]["BackgroundTransparency"] = 1
-UI["1b"]["Position"] = UDim2.new(0, 0, 0.2, 0)
+-- // StarterGui.mobile ver.Frame.Title.UITextSizeConstraint \\ --
+UI["19"] = Instance.new("UITextSizeConstraint", UI["17"])
+UI["19"]["MaxTextSize"] = 48
 
--- // StarterGui.Dox ur self.Frame.TimeZone.UIStroke \\ --
-UI["1c"] = Instance.new("UIStroke", UI["18"])
-UI["1c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-UI["1c"]["Thickness"] = 2.7
+-- // StarterGui.mobile ver.Frame.It dox yourself. \\ --
+UI["1a"] = Instance.new("TextLabel", UI["2"])
+UI["1a"]["TextWrapped"] = true
+UI["1a"]["BorderSizePixel"] = 0
+UI["1a"]["TextScaled"] = true
+UI["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1a"]["TextSize"] = 16
+UI["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1a"]["BackgroundTransparency"] = 1
+UI["1a"]["Size"] = UDim2.new(0, 200, 0, 50)
+UI["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1a"]["Text"] = [[(It doxes yourself.)]]
+UI["1a"]["Name"] = [[It dox yourself.]]
+UI["1a"]["Position"] = UDim2.new(0.7319, 0, 0.07, 0)
 
--- // StarterGui.Dox ur self.Frame.TimeZone.UIStroke.LocalScript \\ --
-UI["1d"] = Instance.new("LocalScript", UI["1c"])
+-- // StarterGui.mobile ver.Frame.It dox yourself..UITextSizeConstraint \\ --
+UI["1b"] = Instance.new("UITextSizeConstraint", UI["1a"])
+UI["1b"]["MaxTextSize"] = 16
 
+-- // StarterGui.mobile ver.Frame.TimeZone \\ --
+UI["1c"] = Instance.new("TextButton", UI["2"])
+UI["1c"]["TextWrapped"] = true
+UI["1c"]["BorderSizePixel"] = 0
+UI["1c"]["TextSize"] = 34
+UI["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1c"]["TextScaled"] = true
+UI["1c"]["BackgroundColor3"] = Color3.fromRGB(73, 73, 73)
+UI["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["1c"]["Size"] = UDim2.new(0, 172, 0, 50)
+UI["1c"]["Name"] = [[TimeZone]]
+UI["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1c"]["Text"] = [[]]
+UI["1c"]["Position"] = UDim2.new(0.01743, 0, 0.6375, 0)
 
--- // StarterGui.Dox ur self.Frame.TimeZone.UIStroke \\ --
-UI["1e"] = Instance.new("UIStroke", UI["18"])
+-- // StarterGui.mobile ver.Frame.TimeZone.TextLabel \\ --
+UI["1d"] = Instance.new("TextLabel", UI["1c"])
+UI["1d"]["BorderSizePixel"] = 0
+UI["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1d"]["TextSize"] = 27
+UI["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1d"]["BackgroundTransparency"] = 1
+UI["1d"]["Size"] = UDim2.new(0, 172, 0, 50)
+UI["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1d"]["Text"] = [[Time Zone]]
+UI["1d"]["Position"] = UDim2.new(0.10465, 0, 0, 0)
 
-
--- // StarterGui.Dox ur self.Frame.TimeZone.LocalScript \\ --
-UI["1f"] = Instance.new("LocalScript", UI["18"])
-
-
--- // StarterGui.Dox ur self.Frame.Smooth GUI Dragging \\ --
-UI["20"] = Instance.new("LocalScript", UI["2"])
-UI["20"]["Name"] = [[Smooth GUI Dragging]]
-
--- // StarterGui.Dox ur self.Frame.LocationFrame \\ --
-UI["21"] = Instance.new("Frame", UI["2"])
-UI["21"]["Visible"] = false
-UI["21"]["BorderSizePixel"] = 0
-UI["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["21"]["Size"] = UDim2.new(0, 506, 0, 328)
-UI["21"]["Position"] = UDim2.new(0.30295, 0, 0.14, 0)
-UI["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["21"]["Name"] = [[LocationFrame]]
-UI["21"]["BackgroundTransparency"] = 1
-
--- // StarterGui.Dox ur self.Frame.LocationFrame.Location \\ --
-UI["22"] = Instance.new("TextLabel", UI["21"])
-UI["22"]["BorderSizePixel"] = 0
-UI["22"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
-UI["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["22"]["TextSize"] = 24
-UI["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["22"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["22"]["BackgroundTransparency"] = 1
-UI["22"]["Size"] = UDim2.new(0, 200, 0, 50)
-UI["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["22"]["Text"] = [[]]
-UI["22"]["Name"] = [[Location]]
-
--- // StarterGui.Dox ur self.Frame.LocationFrame.Location.player ip \\ --
-UI["23"] = Instance.new("TextLabel", UI["22"])
-UI["23"]["BorderSizePixel"] = 0
-UI["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["23"]["TextSize"] = 24
-UI["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["23"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["23"]["BackgroundTransparency"] = 1
-UI["23"]["Size"] = UDim2.new(0, 200, 0, 50)
-UI["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["23"]["Name"] = [[player ip]]
-UI["23"]["Position"] = UDim2.new(0.115, 0, -0.02, 0)
-
--- // StarterGui.Dox ur self.Frame.LocationFrame.Location.LocalScript \\ --
-UI["24"] = Instance.new("LocalScript", UI["22"])
+-- // StarterGui.mobile ver.Frame.TimeZone.TextLabel.UIStroke \\ --
+UI["1e"] = Instance.new("UIStroke", UI["1d"])
 
 
--- // StarterGui.Dox ur self.Frame.LocationFrame.Location.player country \\ --
-UI["25"] = Instance.new("TextLabel", UI["22"])
-UI["25"]["BorderSizePixel"] = 0
-UI["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["25"]["TextSize"] = 24
-UI["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["25"]["BackgroundTransparency"] = 1
-UI["25"]["Size"] = UDim2.new(0, 200, 0, 50)
-UI["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["25"]["Name"] = [[player country]]
-UI["25"]["Position"] = UDim2.new(0.115, 0, 0.5, 0)
+-- // StarterGui.mobile ver.Frame.TimeZone.ImageLabel \\ --
+UI["1f"] = Instance.new("ImageLabel", UI["1c"])
+UI["1f"]["BorderSizePixel"] = 0
+UI["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1f"]["ScaleType"] = Enum.ScaleType.Fit
+UI["1f"]["Image"] = [[rbxassetid://74288638990698]]
+UI["1f"]["Size"] = UDim2.new(0, 36, 0, 30)
+UI["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1f"]["BackgroundTransparency"] = 1
+UI["1f"]["Position"] = UDim2.new(0, 0, 0.2, 0)
 
--- // StarterGui.Dox ur self.Frame.LocationFrame.Location.player region \\ --
-UI["26"] = Instance.new("TextLabel", UI["22"])
+-- // StarterGui.mobile ver.Frame.TimeZone.UIStroke \\ --
+UI["20"] = Instance.new("UIStroke", UI["1c"])
+UI["20"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["20"]["Thickness"] = 2.7
+
+-- // StarterGui.mobile ver.Frame.TimeZone.UIStroke.LocalScript \\ --
+UI["21"] = Instance.new("LocalScript", UI["20"])
+
+
+-- // StarterGui.mobile ver.Frame.TimeZone.UIStroke \\ --
+UI["22"] = Instance.new("UIStroke", UI["1c"])
+
+
+-- // StarterGui.mobile ver.Frame.TimeZone.LocalScript \\ --
+UI["23"] = Instance.new("LocalScript", UI["1c"])
+
+
+-- // StarterGui.mobile ver.Frame.TimeZone.UITextSizeConstraint \\ --
+UI["24"] = Instance.new("UITextSizeConstraint", UI["1c"])
+UI["24"]["MaxTextSize"] = 34
+
+-- // StarterGui.mobile ver.Frame.Smooth GUI Dragging \\ --
+UI["25"] = Instance.new("LocalScript", UI["2"])
+UI["25"]["Name"] = [[Smooth GUI Dragging]]
+
+-- // StarterGui.mobile ver.Frame.LocationFrame \\ --
+UI["26"] = Instance.new("Frame", UI["2"])
+UI["26"]["Visible"] = false
 UI["26"]["BorderSizePixel"] = 0
 UI["26"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["26"]["TextSize"] = 24
-UI["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["26"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["26"]["BackgroundTransparency"] = 1
-UI["26"]["Size"] = UDim2.new(0, 200, 0, 50)
+UI["26"]["Size"] = UDim2.new(0, 506, 0, 328)
+UI["26"]["Position"] = UDim2.new(0.30295, 0, 0.14, 0)
 UI["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["26"]["Name"] = [[player region]]
-UI["26"]["Position"] = UDim2.new(0.115, 0, 0.98, 0)
+UI["26"]["Name"] = [[LocationFrame]]
+UI["26"]["BackgroundTransparency"] = 1
 
--- // StarterGui.Dox ur self.Frame.LocationFrame.Location.player city \\ --
-UI["27"] = Instance.new("TextLabel", UI["22"])
+-- // StarterGui.mobile ver.Frame.LocationFrame.Location \\ --
+UI["27"] = Instance.new("TextLabel", UI["26"])
 UI["27"]["BorderSizePixel"] = 0
+UI["27"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
 UI["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 UI["27"]["TextSize"] = 24
 UI["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
@@ -325,11 +298,11 @@ UI["27"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 UI["27"]["BackgroundTransparency"] = 1
 UI["27"]["Size"] = UDim2.new(0, 200, 0, 50)
 UI["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["27"]["Name"] = [[player city]]
-UI["27"]["Position"] = UDim2.new(0.115, 0, 1.5, 0)
+UI["27"]["Text"] = [[]]
+UI["27"]["Name"] = [[Location]]
 
--- // StarterGui.Dox ur self.Frame.LocationFrame.Location.player latitude \\ --
-UI["28"] = Instance.new("TextLabel", UI["22"])
+-- // StarterGui.mobile ver.Frame.LocationFrame.Location.player ip \\ --
+UI["28"] = Instance.new("TextLabel", UI["27"])
 UI["28"]["BorderSizePixel"] = 0
 UI["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 UI["28"]["TextSize"] = 24
@@ -338,24 +311,15 @@ UI["28"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 UI["28"]["BackgroundTransparency"] = 1
 UI["28"]["Size"] = UDim2.new(0, 200, 0, 50)
 UI["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["28"]["Name"] = [[player latitude]]
-UI["28"]["Position"] = UDim2.new(0.115, 0, 1.98, 0)
+UI["28"]["Name"] = [[player ip]]
+UI["28"]["Position"] = UDim2.new(0.115, 0, -0.02, 0)
 
--- // StarterGui.Dox ur self.Frame.LocationFrame.Location.player longitude \\ --
-UI["29"] = Instance.new("TextLabel", UI["22"])
-UI["29"]["BorderSizePixel"] = 0
-UI["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["29"]["TextSize"] = 24
-UI["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["29"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["29"]["BackgroundTransparency"] = 1
-UI["29"]["Size"] = UDim2.new(0, 200, 0, 50)
-UI["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["29"]["Name"] = [[player longitude]]
-UI["29"]["Position"] = UDim2.new(0.115, 0, 2.5, 0)
+-- // StarterGui.mobile ver.Frame.LocationFrame.Location.LocalScript \\ --
+UI["29"] = Instance.new("LocalScript", UI["27"])
 
--- // StarterGui.Dox ur self.Frame.LocationFrame.Location.postalcode \\ --
-UI["2a"] = Instance.new("TextLabel", UI["22"])
+
+-- // StarterGui.mobile ver.Frame.LocationFrame.Location.player country \\ --
+UI["2a"] = Instance.new("TextLabel", UI["27"])
 UI["2a"]["BorderSizePixel"] = 0
 UI["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 UI["2a"]["TextSize"] = 24
@@ -364,154 +328,173 @@ UI["2a"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 UI["2a"]["BackgroundTransparency"] = 1
 UI["2a"]["Size"] = UDim2.new(0, 200, 0, 50)
 UI["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["2a"]["Name"] = [[postalcode]]
-UI["2a"]["Position"] = UDim2.new(0.115, 0, 2.98, 0)
+UI["2a"]["Name"] = [[player country]]
+UI["2a"]["Position"] = UDim2.new(0.115, 0, 0.5, 0)
 
--- // StarterGui.Dox ur self.Frame.LocationFrame.LocalScript \\ --
-UI["2b"] = Instance.new("LocalScript", UI["21"])
+-- // StarterGui.mobile ver.Frame.LocationFrame.Location.player region \\ --
+UI["2b"] = Instance.new("TextLabel", UI["27"])
+UI["2b"]["BorderSizePixel"] = 0
+UI["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2b"]["TextSize"] = 24
+UI["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2b"]["BackgroundTransparency"] = 1
+UI["2b"]["Size"] = UDim2.new(0, 200, 0, 50)
+UI["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2b"]["Name"] = [[player region]]
+UI["2b"]["Position"] = UDim2.new(0.115, 0, 0.98, 0)
 
+-- // StarterGui.mobile ver.Frame.LocationFrame.Location.player city \\ --
+UI["2c"] = Instance.new("TextLabel", UI["27"])
+UI["2c"]["BorderSizePixel"] = 0
+UI["2c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2c"]["TextSize"] = 24
+UI["2c"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["2c"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2c"]["BackgroundTransparency"] = 1
+UI["2c"]["Size"] = UDim2.new(0, 200, 0, 50)
+UI["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2c"]["Name"] = [[player city]]
+UI["2c"]["Position"] = UDim2.new(0.115, 0, 1.5, 0)
 
--- // StarterGui.Dox ur self.Frame.UIStroke \\ --
-UI["2c"] = Instance.new("UIStroke", UI["2"])
-UI["2c"]["Thickness"] = 2.7
+-- // StarterGui.mobile ver.Frame.LocationFrame.Location.player latitude \\ --
+UI["2d"] = Instance.new("TextLabel", UI["27"])
+UI["2d"]["BorderSizePixel"] = 0
+UI["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2d"]["TextSize"] = 24
+UI["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["2d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2d"]["BackgroundTransparency"] = 1
+UI["2d"]["Size"] = UDim2.new(0, 200, 0, 50)
+UI["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2d"]["Name"] = [[player latitude]]
+UI["2d"]["Position"] = UDim2.new(0.115, 0, 1.98, 0)
 
--- // StarterGui.Dox ur self.Frame.UIStroke.LocalScript \\ --
-UI["2d"] = Instance.new("LocalScript", UI["2c"])
-
-
--- // StarterGui.Dox ur self.Frame.Close \\ --
-UI["2e"] = Instance.new("TextButton", UI["2"])
-UI["2e"]["TextWrapped"] = true
+-- // StarterGui.mobile ver.Frame.LocationFrame.Location.player longitude \\ --
+UI["2e"] = Instance.new("TextLabel", UI["27"])
 UI["2e"]["BorderSizePixel"] = 0
-UI["2e"]["TextSize"] = 34
-UI["2e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["2e"]["BackgroundColor3"] = Color3.fromRGB(73, 73, 73)
+UI["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2e"]["TextSize"] = 24
 UI["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["2e"]["Size"] = UDim2.new(0, 35, 0, 35)
-UI["2e"]["Name"] = [[Close]]
+UI["2e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2e"]["BackgroundTransparency"] = 1
+UI["2e"]["Size"] = UDim2.new(0, 200, 0, 50)
 UI["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["2e"]["Text"] = [[]]
-UI["2e"]["Position"] = UDim2.new(0.9437, 0, 0.0195, 0)
+UI["2e"]["Name"] = [[player longitude]]
+UI["2e"]["Position"] = UDim2.new(0.115, 0, 2.5, 0)
 
--- // StarterGui.Dox ur self.Frame.Close.TextLabel \\ --
-UI["2f"] = Instance.new("TextLabel", UI["2e"])
+-- // StarterGui.mobile ver.Frame.LocationFrame.Location.postalcode \\ --
+UI["2f"] = Instance.new("TextLabel", UI["27"])
 UI["2f"]["BorderSizePixel"] = 0
 UI["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["2f"]["TextSize"] = 30
+UI["2f"]["TextSize"] = 24
 UI["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 UI["2f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 UI["2f"]["BackgroundTransparency"] = 1
-UI["2f"]["Size"] = UDim2.new(0, 35, 0, 35)
+UI["2f"]["Size"] = UDim2.new(0, 200, 0, 50)
 UI["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["2f"]["Text"] = [[X]]
-UI["2f"]["Position"] = UDim2.new(-0.00166, 0, -0.00286, 0)
+UI["2f"]["Name"] = [[postalcode]]
+UI["2f"]["Position"] = UDim2.new(0.115, 0, 2.98, 0)
 
--- // StarterGui.Dox ur self.Frame.Close.TextLabel.UIStroke \\ --
-UI["30"] = Instance.new("UIStroke", UI["2f"])
+-- // StarterGui.mobile ver.Frame.LocationFrame.LocalScript \\ --
+UI["30"] = Instance.new("LocalScript", UI["26"])
 
 
--- // StarterGui.Dox ur self.Frame.Close.UIStroke \\ --
-UI["31"] = Instance.new("UIStroke", UI["2e"])
-UI["31"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+-- // StarterGui.mobile ver.Frame.UIStroke \\ --
+UI["31"] = Instance.new("UIStroke", UI["2"])
 UI["31"]["Thickness"] = 2.7
 
--- // StarterGui.Dox ur self.Frame.Close.UIStroke.LocalScript \\ --
+-- // StarterGui.mobile ver.Frame.UIStroke.LocalScript \\ --
 UI["32"] = Instance.new("LocalScript", UI["31"])
 
 
--- // StarterGui.Dox ur self.Frame.Close.UIStroke \\ --
-UI["33"] = Instance.new("UIStroke", UI["2e"])
+-- // StarterGui.mobile ver.Frame.Close \\ --
+UI["33"] = Instance.new("TextButton", UI["2"])
+UI["33"]["TextWrapped"] = true
+UI["33"]["BorderSizePixel"] = 0
+UI["33"]["TextSize"] = 34
+UI["33"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["33"]["TextScaled"] = true
+UI["33"]["BackgroundColor3"] = Color3.fromRGB(73, 73, 73)
+UI["33"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["33"]["Size"] = UDim2.new(0, 35, 0, 35)
+UI["33"]["Name"] = [[Close]]
+UI["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["33"]["Text"] = [[]]
+UI["33"]["Position"] = UDim2.new(0.9437, 0, 0.0195, 0)
+
+-- // StarterGui.mobile ver.Frame.Close.TextLabel \\ --
+UI["34"] = Instance.new("TextLabel", UI["33"])
+UI["34"]["BorderSizePixel"] = 0
+UI["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["34"]["TextSize"] = 30
+UI["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["34"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["34"]["BackgroundTransparency"] = 1
+UI["34"]["Size"] = UDim2.new(0, 35, 0, 35)
+UI["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["34"]["Text"] = [[X]]
+UI["34"]["Position"] = UDim2.new(-0.00166, 0, -0.00286, 0)
+
+-- // StarterGui.mobile ver.Frame.Close.TextLabel.UIStroke \\ --
+UI["35"] = Instance.new("UIStroke", UI["34"])
 
 
--- // StarterGui.Dox ur self.Frame.Close.LocalScript \\ --
-UI["34"] = Instance.new("LocalScript", UI["2e"])
+-- // StarterGui.mobile ver.Frame.Close.UIStroke \\ --
+UI["36"] = Instance.new("UIStroke", UI["33"])
+UI["36"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["36"]["Thickness"] = 2.7
+
+-- // StarterGui.mobile ver.Frame.Close.UIStroke.LocalScript \\ --
+UI["37"] = Instance.new("LocalScript", UI["36"])
 
 
--- // StarterGui.Dox ur self.Frame.MainFrame \\ --
-UI["35"] = Instance.new("Frame", UI["2"])
-UI["35"]["Visible"] = false
-UI["35"]["BorderSizePixel"] = 0
-UI["35"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["35"]["Size"] = UDim2.new(0, 506, 0, 328)
-UI["35"]["Position"] = UDim2.new(0.30295, 0, 0.14, 0)
-UI["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["35"]["Name"] = [[MainFrame]]
-UI["35"]["BackgroundTransparency"] = 1
-
--- // StarterGui.Dox ur self.Frame.MainFrame.LocalScript \\ --
-UI["36"] = Instance.new("LocalScript", UI["35"])
+-- // StarterGui.mobile ver.Frame.Close.UIStroke \\ --
+UI["38"] = Instance.new("UIStroke", UI["33"])
 
 
--- // StarterGui.Dox ur self.Frame.MainFrame.TextLabel \\ --
-UI["37"] = Instance.new("TextLabel", UI["35"])
-UI["37"]["BorderSizePixel"] = 0
-UI["37"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["37"]["TextSize"] = 42
-UI["37"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["37"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["37"]["BackgroundTransparency"] = 1
-UI["37"]["Size"] = UDim2.new(0, 172, 0, 50)
-UI["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["37"]["Text"] = [[Please read.]]
-UI["37"]["Position"] = UDim2.new(0.22718, 0, -0.03963, 0)
-
--- // StarterGui.Dox ur self.Frame.MainFrame.TextLabel.UIStroke \\ --
-UI["38"] = Instance.new("UIStroke", UI["37"])
+-- // StarterGui.mobile ver.Frame.Close.LocalScript \\ --
+UI["39"] = Instance.new("LocalScript", UI["33"])
 
 
--- // StarterGui.Dox ur self.Frame.MainFrame.TextLabel \\ --
-UI["39"] = Instance.new("TextLabel", UI["35"])
-UI["39"]["BorderSizePixel"] = 0
-UI["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["39"]["TextSize"] = 27
-UI["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["39"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["39"]["BackgroundTransparency"] = 1
-UI["39"]["Size"] = UDim2.new(0, 172, 0, 50)
-UI["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["39"]["Text"] = [[This script made by belb]]
-UI["39"]["Position"] = UDim2.new(0.22718, 0, 0.04573, 0)
+-- // StarterGui.mobile ver.Frame.Close.UITextSizeConstraint \\ --
+UI["3a"] = Instance.new("UITextSizeConstraint", UI["33"])
+UI["3a"]["MaxTextSize"] = 34
 
--- // StarterGui.Dox ur self.Frame.MainFrame.TextLabel.UIStroke \\ --
-UI["3a"] = Instance.new("UIStroke", UI["39"])
-
-
--- // StarterGui.Dox ur self.Frame.MainFrame.TextLabel \\ --
-UI["3b"] = Instance.new("TextLabel", UI["35"])
+-- // StarterGui.mobile ver.Frame.MainFrame \\ --
+UI["3b"] = Instance.new("Frame", UI["2"])
+UI["3b"]["Visible"] = false
 UI["3b"]["BorderSizePixel"] = 0
 UI["3b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["3b"]["TextSize"] = 27
-UI["3b"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["3b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["3b"]["BackgroundTransparency"] = 1
-UI["3b"]["Size"] = UDim2.new(0, 172, 0, 50)
+UI["3b"]["Size"] = UDim2.new(0, 506, 0, 328)
+UI["3b"]["Position"] = UDim2.new(0.30295, 0, 0.14, 0)
 UI["3b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["3b"]["Text"] = [[Discord My User:belb1337]]
-UI["3b"]["Position"] = UDim2.new(0.22718, 0, 0.1128, 0)
+UI["3b"]["Name"] = [[MainFrame]]
+UI["3b"]["BackgroundTransparency"] = 1
 
--- // StarterGui.Dox ur self.Frame.MainFrame.TextLabel.UIStroke \\ --
-UI["3c"] = Instance.new("UIStroke", UI["3b"])
+-- // StarterGui.mobile ver.Frame.MainFrame.LocalScript \\ --
+UI["3c"] = Instance.new("LocalScript", UI["3b"])
 
 
--- // StarterGui.Dox ur self.Frame.MainFrame.TextLabel \\ --
-UI["3d"] = Instance.new("TextLabel", UI["35"])
+-- // StarterGui.mobile ver.Frame.MainFrame.TextLabel \\ --
+UI["3d"] = Instance.new("TextLabel", UI["3b"])
 UI["3d"]["BorderSizePixel"] = 0
 UI["3d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["3d"]["TextSize"] = 27
+UI["3d"]["TextSize"] = 42
 UI["3d"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 UI["3d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 UI["3d"]["BackgroundTransparency"] = 1
 UI["3d"]["Size"] = UDim2.new(0, 172, 0, 50)
 UI["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["3d"]["Text"] = [[My youtube channel: @belb24]]
-UI["3d"]["Position"] = UDim2.new(0.22718, 0, 0.17378, 0)
+UI["3d"]["Text"] = [[Please read.]]
+UI["3d"]["Position"] = UDim2.new(0.22718, 0, -0.03963, 0)
 
--- // StarterGui.Dox ur self.Frame.MainFrame.TextLabel.UIStroke \\ --
+-- // StarterGui.mobile ver.Frame.MainFrame.TextLabel.UIStroke \\ --
 UI["3e"] = Instance.new("UIStroke", UI["3d"])
 
 
--- // StarterGui.Dox ur self.Frame.MainFrame.TextLabel \\ --
-UI["3f"] = Instance.new("TextLabel", UI["35"])
+-- // StarterGui.mobile ver.Frame.MainFrame.TextLabel \\ --
+UI["3f"] = Instance.new("TextLabel", UI["3b"])
 UI["3f"]["BorderSizePixel"] = 0
 UI["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 UI["3f"]["TextSize"] = 27
@@ -520,261 +503,254 @@ UI["3f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 UI["3f"]["BackgroundTransparency"] = 1
 UI["3f"]["Size"] = UDim2.new(0, 172, 0, 50)
 UI["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["3f"]["Text"] = [[This script made by 3-4 days~]]
-UI["3f"]["Position"] = UDim2.new(0.22718, 0, 0.22866, 0)
+UI["3f"]["Text"] = [[This script made by belb]]
+UI["3f"]["Position"] = UDim2.new(0.22718, 0, 0.04573, 0)
 
--- // StarterGui.Dox ur self.Frame.MainFrame.TextLabel.UIStroke \\ --
+-- // StarterGui.mobile ver.Frame.MainFrame.TextLabel.UIStroke \\ --
 UI["40"] = Instance.new("UIStroke", UI["3f"])
 
 
--- // StarterGui.Dox ur self.Frame.MainFrame.TextLabel \\ --
-UI["41"] = Instance.new("TextLabel", UI["35"])
+-- // StarterGui.mobile ver.Frame.MainFrame.TextLabel \\ --
+UI["41"] = Instance.new("TextLabel", UI["3b"])
 UI["41"]["BorderSizePixel"] = 0
 UI["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["41"]["TextSize"] = 47
+UI["41"]["TextSize"] = 27
 UI["41"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 UI["41"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 UI["41"]["BackgroundTransparency"] = 1
 UI["41"]["Size"] = UDim2.new(0, 172, 0, 50)
 UI["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["41"]["Text"] = [[So,enjoy this script!]]
-UI["41"]["Position"] = UDim2.new(0.31809, 0, 0.29878, 0)
+UI["41"]["Text"] = [[Discord My User:belb1337]]
+UI["41"]["Position"] = UDim2.new(0.22718, 0, 0.1128, 0)
 
--- // StarterGui.Dox ur self.Frame.MainFrame.TextLabel.UIStroke \\ --
+-- // StarterGui.mobile ver.Frame.MainFrame.TextLabel.UIStroke \\ --
 UI["42"] = Instance.new("UIStroke", UI["41"])
 
 
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy youtube channel \\ --
-UI["43"] = Instance.new("TextButton", UI["35"])
+-- // StarterGui.mobile ver.Frame.MainFrame.TextLabel \\ --
+UI["43"] = Instance.new("TextLabel", UI["3b"])
 UI["43"]["BorderSizePixel"] = 0
-UI["43"]["TextSize"] = 30
-UI["43"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["43"]["BackgroundColor3"] = Color3.fromRGB(73, 73, 73)
+UI["43"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["43"]["TextSize"] = 27
 UI["43"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["43"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["43"]["BackgroundTransparency"] = 1
 UI["43"]["Size"] = UDim2.new(0, 172, 0, 50)
-UI["43"]["Name"] = [[Copy youtube channel]]
 UI["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["43"]["Text"] = [[]]
-UI["43"]["Position"] = UDim2.new(0.01743, 0, 0.485, 0)
+UI["43"]["Text"] = [[My youtube channel: @belb24]]
+UI["43"]["Position"] = UDim2.new(0.22718, 0, 0.17378, 0)
 
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy youtube channel.TextLabel \\ --
-UI["44"] = Instance.new("TextLabel", UI["43"])
-UI["44"]["BorderSizePixel"] = 0
-UI["44"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["44"]["TextSize"] = 32
-UI["44"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["44"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["44"]["BackgroundTransparency"] = 1
-UI["44"]["Size"] = UDim2.new(0, 172, 0, 50)
-UI["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["44"]["Text"] = [[Copy YT]]
-UI["44"]["Position"] = UDim2.new(0.10465, 0, 0, 0)
-
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy youtube channel.TextLabel.UIStroke \\ --
-UI["45"] = Instance.new("UIStroke", UI["44"])
+-- // StarterGui.mobile ver.Frame.MainFrame.TextLabel.UIStroke \\ --
+UI["44"] = Instance.new("UIStroke", UI["43"])
 
 
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy youtube channel.ImageLabel \\ --
-UI["46"] = Instance.new("ImageLabel", UI["43"])
-UI["46"]["BorderSizePixel"] = 0
-UI["46"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["46"]["ScaleType"] = Enum.ScaleType.Crop
-UI["46"]["Image"] = [[rbxassetid://108137871744471]]
-UI["46"]["Size"] = UDim2.new(0, 36, 0, 30)
-UI["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["46"]["BackgroundTransparency"] = 1
-UI["46"]["Position"] = UDim2.new(0, 0, 0.2, 0)
+-- // StarterGui.mobile ver.Frame.MainFrame.TextLabel \\ --
+UI["45"] = Instance.new("TextLabel", UI["3b"])
+UI["45"]["BorderSizePixel"] = 0
+UI["45"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["45"]["TextSize"] = 27
+UI["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["45"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["45"]["BackgroundTransparency"] = 1
+UI["45"]["Size"] = UDim2.new(0, 172, 0, 50)
+UI["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["45"]["Text"] = [[This script made by 3-4 days~]]
+UI["45"]["Position"] = UDim2.new(0.22718, 0, 0.22866, 0)
 
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy youtube channel.UIStroke \\ --
-UI["47"] = Instance.new("UIStroke", UI["43"])
-
-
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy youtube channel.UIStroke \\ --
-UI["48"] = Instance.new("UIStroke", UI["43"])
-UI["48"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-UI["48"]["Thickness"] = 2.7
-
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy youtube channel.UIStroke.LocalScript \\ --
-UI["49"] = Instance.new("LocalScript", UI["48"])
+-- // StarterGui.mobile ver.Frame.MainFrame.TextLabel.UIStroke \\ --
+UI["46"] = Instance.new("UIStroke", UI["45"])
 
 
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy youtube channel.LocalScript \\ --
-UI["4a"] = Instance.new("LocalScript", UI["43"])
+-- // StarterGui.mobile ver.Frame.MainFrame.TextLabel \\ --
+UI["47"] = Instance.new("TextLabel", UI["3b"])
+UI["47"]["BorderSizePixel"] = 0
+UI["47"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["47"]["TextSize"] = 47
+UI["47"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["47"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["47"]["BackgroundTransparency"] = 1
+UI["47"]["Size"] = UDim2.new(0, 172, 0, 50)
+UI["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["47"]["Text"] = [[So,enjoy this script!]]
+UI["47"]["Position"] = UDim2.new(0.31809, 0, 0.29878, 0)
+
+-- // StarterGui.mobile ver.Frame.MainFrame.TextLabel.UIStroke \\ --
+UI["48"] = Instance.new("UIStroke", UI["47"])
 
 
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy dicord \\ --
-UI["4b"] = Instance.new("TextButton", UI["35"])
-UI["4b"]["BorderSizePixel"] = 0
-UI["4b"]["TextSize"] = 30
-UI["4b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["4b"]["BackgroundColor3"] = Color3.fromRGB(73, 73, 73)
-UI["4b"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["4b"]["Size"] = UDim2.new(0, 172, 0, 50)
-UI["4b"]["Name"] = [[Copy dicord]]
-UI["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["4b"]["Text"] = [[]]
-UI["4b"]["Position"] = UDim2.new(0.50162, 0, 0.485, 0)
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy youtube channel \\ --
+UI["49"] = Instance.new("TextButton", UI["3b"])
+UI["49"]["BorderSizePixel"] = 0
+UI["49"]["TextSize"] = 30
+UI["49"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["49"]["BackgroundColor3"] = Color3.fromRGB(73, 73, 73)
+UI["49"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["49"]["Size"] = UDim2.new(0, 172, 0, 50)
+UI["49"]["Name"] = [[Copy youtube channel]]
+UI["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["49"]["Text"] = [[]]
+UI["49"]["Position"] = UDim2.new(0.01743, 0, 0.485, 0)
 
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy dicord.TextLabel \\ --
-UI["4c"] = Instance.new("TextLabel", UI["4b"])
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy youtube channel.TextLabel \\ --
+UI["4a"] = Instance.new("TextLabel", UI["49"])
+UI["4a"]["BorderSizePixel"] = 0
+UI["4a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4a"]["TextSize"] = 32
+UI["4a"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4a"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4a"]["BackgroundTransparency"] = 1
+UI["4a"]["Size"] = UDim2.new(0, 172, 0, 50)
+UI["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4a"]["Text"] = [[Copy YT]]
+UI["4a"]["Position"] = UDim2.new(0.10465, 0, 0, 0)
+
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy youtube channel.TextLabel.UIStroke \\ --
+UI["4b"] = Instance.new("UIStroke", UI["4a"])
+
+
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy youtube channel.ImageLabel \\ --
+UI["4c"] = Instance.new("ImageLabel", UI["49"])
 UI["4c"]["BorderSizePixel"] = 0
 UI["4c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["4c"]["TextSize"] = 19
-UI["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["4c"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["4c"]["BackgroundTransparency"] = 1
-UI["4c"]["Size"] = UDim2.new(0, 172, 0, 50)
+UI["4c"]["ScaleType"] = Enum.ScaleType.Crop
+UI["4c"]["Image"] = [[rbxassetid://108137871744471]]
+UI["4c"]["Size"] = UDim2.new(0, 36, 0, 30)
 UI["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["4c"]["Text"] = [[Copy Discord]]
-UI["4c"]["Position"] = UDim2.new(0.10465, 0, 0, 0)
+UI["4c"]["BackgroundTransparency"] = 1
+UI["4c"]["Position"] = UDim2.new(0, 0, 0.2, 0)
 
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy dicord.TextLabel.UIStroke \\ --
-UI["4d"] = Instance.new("UIStroke", UI["4c"])
-
-
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy dicord.ImageLabel \\ --
-UI["4e"] = Instance.new("ImageLabel", UI["4b"])
-UI["4e"]["BorderSizePixel"] = 0
-UI["4e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["4e"]["ScaleType"] = Enum.ScaleType.Crop
-UI["4e"]["Image"] = [[rbxassetid://116926728717771]]
-UI["4e"]["Size"] = UDim2.new(0, 36, 0, 30)
-UI["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["4e"]["BackgroundTransparency"] = 1
-UI["4e"]["Position"] = UDim2.new(0, 0, 0.2, 0)
-
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy dicord.UIStroke \\ --
-UI["4f"] = Instance.new("UIStroke", UI["4b"])
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy youtube channel.UIStroke \\ --
+UI["4d"] = Instance.new("UIStroke", UI["49"])
 
 
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy dicord.UIStroke \\ --
-UI["50"] = Instance.new("UIStroke", UI["4b"])
-UI["50"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-UI["50"]["Thickness"] = 2.7
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy youtube channel.UIStroke \\ --
+UI["4e"] = Instance.new("UIStroke", UI["49"])
+UI["4e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["4e"]["Thickness"] = 2.7
 
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy dicord.UIStroke.LocalScript \\ --
-UI["51"] = Instance.new("LocalScript", UI["50"])
-
-
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy dicord.LocalScript \\ --
-UI["52"] = Instance.new("LocalScript", UI["4b"])
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy youtube channel.UIStroke.LocalScript \\ --
+UI["4f"] = Instance.new("LocalScript", UI["4e"])
 
 
--- // StarterGui.Dox ur self.Frame.ConnectionFrame \\ --
-UI["53"] = Instance.new("Frame", UI["2"])
-UI["53"]["Visible"] = false
-UI["53"]["BorderSizePixel"] = 0
-UI["53"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["53"]["Size"] = UDim2.new(0, 506, 0, 328)
-UI["53"]["Position"] = UDim2.new(0.30295, 0, 0.14, 0)
-UI["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["53"]["Name"] = [[ConnectionFrame]]
-UI["53"]["BackgroundTransparency"] = 1
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy youtube channel.LocalScript \\ --
+UI["50"] = Instance.new("LocalScript", UI["49"])
 
--- // StarterGui.Dox ur self.Frame.ConnectionFrame.Location \\ --
-UI["54"] = Instance.new("TextLabel", UI["53"])
+
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy dicord \\ --
+UI["51"] = Instance.new("TextButton", UI["3b"])
+UI["51"]["BorderSizePixel"] = 0
+UI["51"]["TextSize"] = 30
+UI["51"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["51"]["BackgroundColor3"] = Color3.fromRGB(73, 73, 73)
+UI["51"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["51"]["Size"] = UDim2.new(0, 172, 0, 50)
+UI["51"]["Name"] = [[Copy dicord]]
+UI["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["51"]["Text"] = [[]]
+UI["51"]["Position"] = UDim2.new(0.50162, 0, 0.485, 0)
+
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy dicord.TextLabel \\ --
+UI["52"] = Instance.new("TextLabel", UI["51"])
+UI["52"]["BorderSizePixel"] = 0
+UI["52"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["52"]["TextSize"] = 19
+UI["52"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["52"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["52"]["BackgroundTransparency"] = 1
+UI["52"]["Size"] = UDim2.new(0, 172, 0, 50)
+UI["52"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["52"]["Text"] = [[Copy Discord]]
+UI["52"]["Position"] = UDim2.new(0.10465, 0, 0, 0)
+
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy dicord.TextLabel.UIStroke \\ --
+UI["53"] = Instance.new("UIStroke", UI["52"])
+
+
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy dicord.ImageLabel \\ --
+UI["54"] = Instance.new("ImageLabel", UI["51"])
 UI["54"]["BorderSizePixel"] = 0
-UI["54"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
 UI["54"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["54"]["TextSize"] = 24
-UI["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["54"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["54"]["BackgroundTransparency"] = 1
-UI["54"]["Size"] = UDim2.new(0, 200, 0, 50)
+UI["54"]["ScaleType"] = Enum.ScaleType.Crop
+UI["54"]["Image"] = [[rbxassetid://116926728717771]]
+UI["54"]["Size"] = UDim2.new(0, 36, 0, 30)
 UI["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["54"]["Text"] = [[]]
-UI["54"]["Name"] = [[Location]]
+UI["54"]["BackgroundTransparency"] = 1
+UI["54"]["Position"] = UDim2.new(0, 0, 0.2, 0)
 
--- // StarterGui.Dox ur self.Frame.ConnectionFrame.Location.player  isp \\ --
-UI["55"] = Instance.new("TextLabel", UI["54"])
-UI["55"]["BorderSizePixel"] = 0
-UI["55"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["55"]["TextSize"] = 24
-UI["55"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["55"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["55"]["BackgroundTransparency"] = 1
-UI["55"]["Size"] = UDim2.new(0, 200, 0, 50)
-UI["55"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["55"]["Name"] = [[player  isp]]
-UI["55"]["Position"] = UDim2.new(0.305, 0, -0.02, 0)
-
--- // StarterGui.Dox ur self.Frame.ConnectionFrame.Location.LocalScript \\ --
-UI["56"] = Instance.new("LocalScript", UI["54"])
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy dicord.UIStroke \\ --
+UI["55"] = Instance.new("UIStroke", UI["51"])
 
 
--- // StarterGui.Dox ur self.Frame.ConnectionFrame.Location.player org \\ --
-UI["57"] = Instance.new("TextLabel", UI["54"])
-UI["57"]["BorderSizePixel"] = 0
-UI["57"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["57"]["TextSize"] = 24
-UI["57"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["57"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["57"]["BackgroundTransparency"] = 1
-UI["57"]["Size"] = UDim2.new(0, 200, 0, 50)
-UI["57"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["57"]["Name"] = [[player org]]
-UI["57"]["Position"] = UDim2.new(0.305, 0, 0.5, 0)
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy dicord.UIStroke \\ --
+UI["56"] = Instance.new("UIStroke", UI["51"])
+UI["56"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["56"]["Thickness"] = 2.7
 
--- // StarterGui.Dox ur self.Frame.ConnectionFrame.Location.player domain \\ --
-UI["58"] = Instance.new("TextLabel", UI["54"])
-UI["58"]["BorderSizePixel"] = 0
-UI["58"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["58"]["TextSize"] = 24
-UI["58"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["58"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["58"]["BackgroundTransparency"] = 1
-UI["58"]["Size"] = UDim2.new(0, 200, 0, 50)
-UI["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["58"]["Name"] = [[player domain]]
-UI["58"]["Position"] = UDim2.new(0.115, 0, 0.98, 0)
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy dicord.UIStroke.LocalScript \\ --
+UI["57"] = Instance.new("LocalScript", UI["56"])
 
--- // StarterGui.Dox ur self.Frame.ConnectionFrame.Location.player asn \\ --
-UI["59"] = Instance.new("TextLabel", UI["54"])
+
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy dicord.LocalScript \\ --
+UI["58"] = Instance.new("LocalScript", UI["51"])
+
+
+-- // StarterGui.mobile ver.Frame.ConnectionFrame \\ --
+UI["59"] = Instance.new("Frame", UI["2"])
+UI["59"]["Visible"] = false
 UI["59"]["BorderSizePixel"] = 0
 UI["59"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["59"]["TextSize"] = 24
-UI["59"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["59"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["59"]["BackgroundTransparency"] = 1
-UI["59"]["Size"] = UDim2.new(0, 200, 0, 50)
+UI["59"]["Size"] = UDim2.new(0, 506, 0, 328)
+UI["59"]["Position"] = UDim2.new(0.30295, 0, 0.14, 0)
 UI["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["59"]["Name"] = [[player asn]]
-UI["59"]["Position"] = UDim2.new(0.115, 0, 1.5, 0)
+UI["59"]["Name"] = [[ConnectionFrame]]
+UI["59"]["BackgroundTransparency"] = 1
 
--- // StarterGui.Dox ur self.Frame.ConnectionFrame.LocalScript \\ --
-UI["5a"] = Instance.new("LocalScript", UI["53"])
+-- // StarterGui.mobile ver.Frame.ConnectionFrame.Location \\ --
+UI["5a"] = Instance.new("TextLabel", UI["59"])
+UI["5a"]["BorderSizePixel"] = 0
+UI["5a"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5a"]["TextSize"] = 24
+UI["5a"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["5a"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5a"]["BackgroundTransparency"] = 1
+UI["5a"]["Size"] = UDim2.new(0, 200, 0, 50)
+UI["5a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5a"]["Text"] = [[]]
+UI["5a"]["Name"] = [[Location]]
 
-
--- // StarterGui.Dox ur self.Frame.TimeZoneFrame \\ --
-UI["5b"] = Instance.new("Frame", UI["2"])
+-- // StarterGui.mobile ver.Frame.ConnectionFrame.Location.player  isp \\ --
+UI["5b"] = Instance.new("TextLabel", UI["5a"])
 UI["5b"]["BorderSizePixel"] = 0
 UI["5b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["5b"]["Size"] = UDim2.new(0, 506, 0, 328)
-UI["5b"]["Position"] = UDim2.new(0.30295, 0, 0.14, 0)
-UI["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["5b"]["Name"] = [[TimeZoneFrame]]
+UI["5b"]["TextSize"] = 24
+UI["5b"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["5b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 UI["5b"]["BackgroundTransparency"] = 1
+UI["5b"]["Size"] = UDim2.new(0, 200, 0, 50)
+UI["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5b"]["Name"] = [[player  isp]]
+UI["5b"]["Position"] = UDim2.new(0.305, 0, -0.02, 0)
 
--- // StarterGui.Dox ur self.Frame.TimeZoneFrame.Location \\ --
-UI["5c"] = Instance.new("TextLabel", UI["5b"])
-UI["5c"]["BorderSizePixel"] = 0
-UI["5c"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
-UI["5c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["5c"]["TextSize"] = 24
-UI["5c"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["5c"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["5c"]["BackgroundTransparency"] = 1
-UI["5c"]["Size"] = UDim2.new(0, 200, 0, 50)
-UI["5c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["5c"]["Text"] = [[]]
-UI["5c"]["Name"] = [[Location]]
-
--- // StarterGui.Dox ur self.Frame.TimeZoneFrame.Location.LocalScript \\ --
-UI["5d"] = Instance.new("LocalScript", UI["5c"])
+-- // StarterGui.mobile ver.Frame.ConnectionFrame.Location.LocalScript \\ --
+UI["5c"] = Instance.new("LocalScript", UI["5a"])
 
 
--- // StarterGui.Dox ur self.Frame.TimeZoneFrame.Location.Player utc \\ --
-UI["5e"] = Instance.new("TextLabel", UI["5c"])
+-- // StarterGui.mobile ver.Frame.ConnectionFrame.Location.player org \\ --
+UI["5d"] = Instance.new("TextLabel", UI["5a"])
+UI["5d"]["BorderSizePixel"] = 0
+UI["5d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5d"]["TextSize"] = 24
+UI["5d"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["5d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5d"]["BackgroundTransparency"] = 1
+UI["5d"]["Size"] = UDim2.new(0, 200, 0, 50)
+UI["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5d"]["Name"] = [[player org]]
+UI["5d"]["Position"] = UDim2.new(0.305, 0, 0.5, 0)
+
+-- // StarterGui.mobile ver.Frame.ConnectionFrame.Location.player domain \\ --
+UI["5e"] = Instance.new("TextLabel", UI["5a"])
 UI["5e"]["BorderSizePixel"] = 0
 UI["5e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 UI["5e"]["TextSize"] = 24
@@ -783,71 +759,142 @@ UI["5e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 UI["5e"]["BackgroundTransparency"] = 1
 UI["5e"]["Size"] = UDim2.new(0, 200, 0, 50)
 UI["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["5e"]["Name"] = [[Player utc]]
-UI["5e"]["Position"] = UDim2.new(0.11, 0, 0.3, 0)
+UI["5e"]["Name"] = [[player domain]]
+UI["5e"]["Position"] = UDim2.new(0.115, 0, 0.98, 0)
 
--- // StarterGui.Dox ur self.Frame.TimeZoneFrame.LocalScript \\ --
-UI["5f"] = Instance.new("LocalScript", UI["5b"])
+-- // StarterGui.mobile ver.Frame.ConnectionFrame.Location.player asn \\ --
+UI["5f"] = Instance.new("TextLabel", UI["5a"])
+UI["5f"]["BorderSizePixel"] = 0
+UI["5f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5f"]["TextSize"] = 24
+UI["5f"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["5f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5f"]["BackgroundTransparency"] = 1
+UI["5f"]["Size"] = UDim2.new(0, 200, 0, 50)
+UI["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5f"]["Name"] = [[player asn]]
+UI["5f"]["Position"] = UDim2.new(0.115, 0, 1.5, 0)
+
+-- // StarterGui.mobile ver.Frame.ConnectionFrame.LocalScript \\ --
+UI["60"] = Instance.new("LocalScript", UI["59"])
 
 
--- // StarterGui.Dox ur self.Frame.Main \\ --
-UI["60"] = Instance.new("TextButton", UI["2"])
-UI["60"]["TextWrapped"] = true
-UI["60"]["BorderSizePixel"] = 0
-UI["60"]["TextSize"] = 34
-UI["60"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["60"]["BackgroundColor3"] = Color3.fromRGB(73, 73, 73)
-UI["60"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["60"]["Size"] = UDim2.new(0, 172, 0, 50)
-UI["60"]["Name"] = [[Main]]
-UI["60"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["60"]["Text"] = [[]]
-UI["60"]["Position"] = UDim2.new(0.01743, 0, 0.1775, 0)
-
--- // StarterGui.Dox ur self.Frame.Main.TextLabel \\ --
-UI["61"] = Instance.new("TextLabel", UI["60"])
+-- // StarterGui.mobile ver.Frame.TimeZoneFrame \\ --
+UI["61"] = Instance.new("Frame", UI["2"])
 UI["61"]["BorderSizePixel"] = 0
 UI["61"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["61"]["TextSize"] = 30
-UI["61"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["61"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["61"]["BackgroundTransparency"] = 1
-UI["61"]["Size"] = UDim2.new(0, 172, 0, 50)
+UI["61"]["Size"] = UDim2.new(0, 506, 0, 328)
+UI["61"]["Position"] = UDim2.new(0.30295, 0, 0.14, 0)
 UI["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["61"]["Text"] = [[Main]]
-UI["61"]["Position"] = UDim2.new(0.10465, 0, 0, 0)
+UI["61"]["Name"] = [[TimeZoneFrame]]
+UI["61"]["BackgroundTransparency"] = 1
 
--- // StarterGui.Dox ur self.Frame.Main.TextLabel.UIStroke \\ --
-UI["62"] = Instance.new("UIStroke", UI["61"])
+-- // StarterGui.mobile ver.Frame.TimeZoneFrame.Location \\ --
+UI["62"] = Instance.new("TextLabel", UI["61"])
+UI["62"]["BorderSizePixel"] = 0
+UI["62"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["62"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["62"]["TextSize"] = 24
+UI["62"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["62"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["62"]["BackgroundTransparency"] = 1
+UI["62"]["Size"] = UDim2.new(0, 200, 0, 50)
+UI["62"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["62"]["Text"] = [[]]
+UI["62"]["Name"] = [[Location]]
 
-
--- // StarterGui.Dox ur self.Frame.Main.ImageLabel \\ --
-UI["63"] = Instance.new("ImageLabel", UI["60"])
-UI["63"]["BorderSizePixel"] = 0
-UI["63"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["63"]["Image"] = [[rbxassetid://126276913405383]]
-UI["63"]["Size"] = UDim2.new(0, 50, 0, 50)
-UI["63"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["63"]["BackgroundTransparency"] = 1
-
--- // StarterGui.Dox ur self.Frame.Main.UIStroke \\ --
-UI["64"] = Instance.new("UIStroke", UI["60"])
-UI["64"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
-UI["64"]["Thickness"] = 2.7
-
--- // StarterGui.Dox ur self.Frame.Main.UIStroke.LocalScript \\ --
-UI["65"] = Instance.new("LocalScript", UI["64"])
+-- // StarterGui.mobile ver.Frame.TimeZoneFrame.Location.LocalScript \\ --
+UI["63"] = Instance.new("LocalScript", UI["62"])
 
 
--- // StarterGui.Dox ur self.Frame.Main.UIStroke \\ --
-UI["66"] = Instance.new("UIStroke", UI["60"])
+-- // StarterGui.mobile ver.Frame.TimeZoneFrame.Location.Player utc \\ --
+UI["64"] = Instance.new("TextLabel", UI["62"])
+UI["64"]["BorderSizePixel"] = 0
+UI["64"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["64"]["TextSize"] = 24
+UI["64"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["64"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["64"]["BackgroundTransparency"] = 1
+UI["64"]["Size"] = UDim2.new(0, 200, 0, 50)
+UI["64"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["64"]["Name"] = [[Player utc]]
+UI["64"]["Position"] = UDim2.new(0.11, 0, 0.3, 0)
+
+-- // StarterGui.mobile ver.Frame.TimeZoneFrame.LocalScript \\ --
+UI["65"] = Instance.new("LocalScript", UI["61"])
 
 
--- // StarterGui.Dox ur self.Frame.Main.LocalScript \\ --
-UI["67"] = Instance.new("LocalScript", UI["60"])
+-- // StarterGui.mobile ver.Frame.Main \\ --
+UI["66"] = Instance.new("TextButton", UI["2"])
+UI["66"]["TextWrapped"] = true
+UI["66"]["BorderSizePixel"] = 0
+UI["66"]["TextSize"] = 34
+UI["66"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["66"]["TextScaled"] = true
+UI["66"]["BackgroundColor3"] = Color3.fromRGB(73, 73, 73)
+UI["66"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["66"]["Size"] = UDim2.new(0, 172, 0, 50)
+UI["66"]["Name"] = [[Main]]
+UI["66"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["66"]["Text"] = [[]]
+UI["66"]["Position"] = UDim2.new(0.01743, 0, 0.1775, 0)
+
+-- // StarterGui.mobile ver.Frame.Main.TextLabel \\ --
+UI["67"] = Instance.new("TextLabel", UI["66"])
+UI["67"]["BorderSizePixel"] = 0
+UI["67"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["67"]["TextSize"] = 30
+UI["67"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["67"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["67"]["BackgroundTransparency"] = 1
+UI["67"]["Size"] = UDim2.new(0, 172, 0, 50)
+UI["67"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["67"]["Text"] = [[Main]]
+UI["67"]["Position"] = UDim2.new(0.10465, 0, 0, 0)
+
+-- // StarterGui.mobile ver.Frame.Main.TextLabel.UIStroke \\ --
+UI["68"] = Instance.new("UIStroke", UI["67"])
 
 
--- // StarterGui.Dox ur self.Frame.Location.UIStroke.LocalScript \\ --
+-- // StarterGui.mobile ver.Frame.Main.ImageLabel \\ --
+UI["69"] = Instance.new("ImageLabel", UI["66"])
+UI["69"]["BorderSizePixel"] = 0
+UI["69"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["69"]["Image"] = [[rbxassetid://126276913405383]]
+UI["69"]["Size"] = UDim2.new(0, 50, 0, 50)
+UI["69"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["69"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.mobile ver.Frame.Main.UIStroke \\ --
+UI["6a"] = Instance.new("UIStroke", UI["66"])
+UI["6a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["6a"]["Thickness"] = 2.7
+
+-- // StarterGui.mobile ver.Frame.Main.UIStroke.LocalScript \\ --
+UI["6b"] = Instance.new("LocalScript", UI["6a"])
+
+
+-- // StarterGui.mobile ver.Frame.Main.UIStroke \\ --
+UI["6c"] = Instance.new("UIStroke", UI["66"])
+
+
+-- // StarterGui.mobile ver.Frame.Main.LocalScript \\ --
+UI["6d"] = Instance.new("LocalScript", UI["66"])
+
+
+-- // StarterGui.mobile ver.Frame.Main.UITextSizeConstraint \\ --
+UI["6e"] = Instance.new("UITextSizeConstraint", UI["66"])
+UI["6e"]["MaxTextSize"] = 34
+
+-- // StarterGui.mobile ver.Frame.UIAspectRatioConstraint \\ --
+UI["6f"] = Instance.new("UIAspectRatioConstraint", UI["2"])
+UI["6f"]["AspectRatio"] = 1.865
+
+-- // StarterGui.mobile ver.UIAspectRatioConstraint \\ --
+UI["70"] = Instance.new("UIAspectRatioConstraint", UI["1"])
+UI["70"]["AspectRatio"] = 2.0804
+
+-- // StarterGui.mobile ver.Frame.Location.UIStroke.LocalScript \\ --
 local function SCRIPT_a()
 local script = UI["a"]
 	while wait() do
@@ -879,7 +926,7 @@ local script = UI["a"]
 	end
 end
 task.spawn(SCRIPT_a)
--- // StarterGui.Dox ur self.Frame.Location.LocalScript \\ --
+-- // StarterGui.mobile ver.Frame.Location.LocalScript \\ --
 local function SCRIPT_c()
 local script = UI["c"]
 	local MainFrame = script.Parent.Parent.MainFrame
@@ -895,9 +942,9 @@ local script = UI["c"]
 	end)
 end
 task.spawn(SCRIPT_c)
--- // StarterGui.Dox ur self.Frame.Connection.UIStroke.LocalScript \\ --
-local function SCRIPT_13()
-local script = UI["13"]
+-- // StarterGui.mobile ver.Frame.Connection.UIStroke.LocalScript \\ --
+local function SCRIPT_14()
+local script = UI["14"]
 	while wait() do
 		script.Parent.Color = Color3.new(255/255,0/255,0/255)
 		for i = 0,255,10 do
@@ -926,10 +973,10 @@ local script = UI["13"]
 		end
 	end
 end
-task.spawn(SCRIPT_13)
--- // StarterGui.Dox ur self.Frame.Connection.LocalScript \\ --
-local function SCRIPT_14()
-local script = UI["14"]
+task.spawn(SCRIPT_14)
+-- // StarterGui.mobile ver.Frame.Connection.LocalScript \\ --
+local function SCRIPT_15()
+local script = UI["15"]
 	local MainFrame = script.Parent.Parent.MainFrame
 	local LocationFrame = script.Parent.Parent.LocationFrame
 	local ConnectionFrame = script.Parent.Parent.ConnectionFrame
@@ -942,10 +989,10 @@ local script = UI["14"]
 		TimeZoneFrame.Visible = false
 	end)
 end
-task.spawn(SCRIPT_14)
--- // StarterGui.Dox ur self.Frame.TimeZone.UIStroke.LocalScript \\ --
-local function SCRIPT_1d()
-local script = UI["1d"]
+task.spawn(SCRIPT_15)
+-- // StarterGui.mobile ver.Frame.TimeZone.UIStroke.LocalScript \\ --
+local function SCRIPT_21()
+local script = UI["21"]
 	while wait() do
 		script.Parent.Color = Color3.new(255/255,0/255,0/255)
 		for i = 0,255,10 do
@@ -974,10 +1021,10 @@ local script = UI["1d"]
 		end
 	end
 end
-task.spawn(SCRIPT_1d)
--- // StarterGui.Dox ur self.Frame.TimeZone.LocalScript \\ --
-local function SCRIPT_1f()
-local script = UI["1f"]
+task.spawn(SCRIPT_21)
+-- // StarterGui.mobile ver.Frame.TimeZone.LocalScript \\ --
+local function SCRIPT_23()
+local script = UI["23"]
 	local MainFrame = script.Parent.Parent.MainFrame
 	local LocationFrame = script.Parent.Parent.LocationFrame
 	local ConnectionFrame = script.Parent.Parent.ConnectionFrame
@@ -990,10 +1037,10 @@ local script = UI["1f"]
 		TimeZoneFrame.Visible = true
 	end)
 end
-task.spawn(SCRIPT_1f)
--- // StarterGui.Dox ur self.Frame.Smooth GUI Dragging \\ --
-local function SCRIPT_20()
-local script = UI["20"]
+task.spawn(SCRIPT_23)
+-- // StarterGui.mobile ver.Frame.Smooth GUI Dragging \\ --
+local function SCRIPT_25()
+local script = UI["25"]
 	local UserInputService = game:GetService("UserInputService")
 	local runService = (game:GetService("RunService"));
 	
@@ -1048,10 +1095,10 @@ local script = UI["20"]
 	
 	runService.Heartbeat:Connect(Update)
 end
-task.spawn(SCRIPT_20)
--- // StarterGui.Dox ur self.Frame.LocationFrame.Location.LocalScript \\ --
-local function SCRIPT_24()
-local script = UI["24"]
+task.spawn(SCRIPT_25)
+-- // StarterGui.mobile ver.Frame.LocationFrame.Location.LocalScript \\ --
+local function SCRIPT_29()
+local script = UI["29"]
 	local api = game.HttpService:JSONDecode(game:HttpGet('https://ipwho.is/'))
 	local label_ip = script.Parent["player ip"]
 	local label_country = script.Parent["player country"]
@@ -1069,46 +1116,14 @@ local script = UI["24"]
 	label_postalcode.Text = "Postal Code:" .. api.postal
 	
 end
-task.spawn(SCRIPT_24)
--- // StarterGui.Dox ur self.Frame.LocationFrame.LocalScript \\ --
-local function SCRIPT_2b()
-local script = UI["2b"]
+task.spawn(SCRIPT_29)
+-- // StarterGui.mobile ver.Frame.LocationFrame.LocalScript \\ --
+local function SCRIPT_30()
+local script = UI["30"]
 	script.Parent.Visible = false
 end
-task.spawn(SCRIPT_2b)
--- // StarterGui.Dox ur self.Frame.UIStroke.LocalScript \\ --
-local function SCRIPT_2d()
-local script = UI["2d"]
-	while wait() do
-		script.Parent.Color = Color3.new(255/255,0/255,0/255)
-		for i = 0,255,10 do
-			wait()
-			script.Parent.Color = Color3.new(255/255,i/255,0/255)
-		end
-		for i = 255,0,-10 do
-			wait()
-			script.Parent.Color = Color3.new(i/255,255/255,0/255)
-		end
-		for i = 0,255,10 do
-			wait()
-			script.Parent.Color = Color3.new(0/255,255/255,i/255) 
-		end
-		for i = 255,0,-10 do
-			wait()
-			script.Parent.Color = Color3.new(0/255,i/255,255/255)
-		end
-		for i = 0,255,10 do
-			wait()
-			script.Parent.Color = Color3.new(i/255,0/255,255/255)
-		end
-		for i = 255,0,-10 do
-			wait()
-			script.Parent.Color = Color3.new(255/255,0/255,i/255)
-		end
-	end
-end
-task.spawn(SCRIPT_2d)
--- // StarterGui.Dox ur self.Frame.Close.UIStroke.LocalScript \\ --
+task.spawn(SCRIPT_30)
+-- // StarterGui.mobile ver.Frame.UIStroke.LocalScript \\ --
 local function SCRIPT_32()
 local script = UI["32"]
 	while wait() do
@@ -1140,23 +1155,55 @@ local script = UI["32"]
 	end
 end
 task.spawn(SCRIPT_32)
--- // StarterGui.Dox ur self.Frame.Close.LocalScript \\ --
-local function SCRIPT_34()
-local script = UI["34"]
+-- // StarterGui.mobile ver.Frame.Close.UIStroke.LocalScript \\ --
+local function SCRIPT_37()
+local script = UI["37"]
+	while wait() do
+		script.Parent.Color = Color3.new(255/255,0/255,0/255)
+		for i = 0,255,10 do
+			wait()
+			script.Parent.Color = Color3.new(255/255,i/255,0/255)
+		end
+		for i = 255,0,-10 do
+			wait()
+			script.Parent.Color = Color3.new(i/255,255/255,0/255)
+		end
+		for i = 0,255,10 do
+			wait()
+			script.Parent.Color = Color3.new(0/255,255/255,i/255) 
+		end
+		for i = 255,0,-10 do
+			wait()
+			script.Parent.Color = Color3.new(0/255,i/255,255/255)
+		end
+		for i = 0,255,10 do
+			wait()
+			script.Parent.Color = Color3.new(i/255,0/255,255/255)
+		end
+		for i = 255,0,-10 do
+			wait()
+			script.Parent.Color = Color3.new(255/255,0/255,i/255)
+		end
+	end
+end
+task.spawn(SCRIPT_37)
+-- // StarterGui.mobile ver.Frame.Close.LocalScript \\ --
+local function SCRIPT_39()
+local script = UI["39"]
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-task.spawn(SCRIPT_34)
--- // StarterGui.Dox ur self.Frame.MainFrame.LocalScript \\ --
-local function SCRIPT_36()
-local script = UI["36"]
+task.spawn(SCRIPT_39)
+-- // StarterGui.mobile ver.Frame.MainFrame.LocalScript \\ --
+local function SCRIPT_3c()
+local script = UI["3c"]
 	script.Parent.Visible = true
 end
-task.spawn(SCRIPT_36)
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy youtube channel.UIStroke.LocalScript \\ --
-local function SCRIPT_49()
-local script = UI["49"]
+task.spawn(SCRIPT_3c)
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy youtube channel.UIStroke.LocalScript \\ --
+local function SCRIPT_4f()
+local script = UI["4f"]
 	while wait() do
 		script.Parent.Color = Color3.new(255/255,0/255,0/255)
 		for i = 0,255,10 do
@@ -1185,18 +1232,18 @@ local script = UI["49"]
 		end
 	end
 end
-task.spawn(SCRIPT_49)
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy youtube channel.LocalScript \\ --
-local function SCRIPT_4a()
-local script = UI["4a"]
+task.spawn(SCRIPT_4f)
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy youtube channel.LocalScript \\ --
+local function SCRIPT_50()
+local script = UI["50"]
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard("belb24")
 	end)
 end
-task.spawn(SCRIPT_4a)
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy dicord.UIStroke.LocalScript \\ --
-local function SCRIPT_51()
-local script = UI["51"]
+task.spawn(SCRIPT_50)
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy dicord.UIStroke.LocalScript \\ --
+local function SCRIPT_57()
+local script = UI["57"]
 	while wait() do
 		script.Parent.Color = Color3.new(255/255,0/255,0/255)
 		for i = 0,255,10 do
@@ -1225,18 +1272,18 @@ local script = UI["51"]
 		end
 	end
 end
-task.spawn(SCRIPT_51)
--- // StarterGui.Dox ur self.Frame.MainFrame.Copy dicord.LocalScript \\ --
-local function SCRIPT_52()
-local script = UI["52"]
+task.spawn(SCRIPT_57)
+-- // StarterGui.mobile ver.Frame.MainFrame.Copy dicord.LocalScript \\ --
+local function SCRIPT_58()
+local script = UI["58"]
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard("belb1337")
 	end)
 end
-task.spawn(SCRIPT_52)
--- // StarterGui.Dox ur self.Frame.ConnectionFrame.Location.LocalScript \\ --
-local function SCRIPT_56()
-local script = UI["56"]
+task.spawn(SCRIPT_58)
+-- // StarterGui.mobile ver.Frame.ConnectionFrame.Location.LocalScript \\ --
+local function SCRIPT_5c()
+local script = UI["5c"]
 	local api = game.HttpService:JSONDecode(game:HttpGet('https://ipwho.is/'))
 	local label_asn = script.Parent["player asn"]
 	local label_org = script.Parent["player org"]
@@ -1247,30 +1294,30 @@ local script = UI["56"]
 	label_isp.Text = "ISP:" .. api.connection.org
 	label_domain.Text = "Domain:" .. api.connection.domain
 end
-task.spawn(SCRIPT_56)
--- // StarterGui.Dox ur self.Frame.ConnectionFrame.LocalScript \\ --
-local function SCRIPT_5a()
-local script = UI["5a"]
+task.spawn(SCRIPT_5c)
+-- // StarterGui.mobile ver.Frame.ConnectionFrame.LocalScript \\ --
+local function SCRIPT_60()
+local script = UI["60"]
 	script.Parent.Visible = false
 end
-task.spawn(SCRIPT_5a)
--- // StarterGui.Dox ur self.Frame.TimeZoneFrame.Location.LocalScript \\ --
-local function SCRIPT_5d()
-local script = UI["5d"]
+task.spawn(SCRIPT_60)
+-- // StarterGui.mobile ver.Frame.TimeZoneFrame.Location.LocalScript \\ --
+local function SCRIPT_63()
+local script = UI["63"]
 	local api = game.HttpService:JSONDecode(game:HttpGet('https://ipwho.is/'))
 	local label_utc = script.Parent["Player utc"]
 	label_utc.Text = "UTC:" .. api.timezone.utc
 end
-task.spawn(SCRIPT_5d)
--- // StarterGui.Dox ur self.Frame.TimeZoneFrame.LocalScript \\ --
-local function SCRIPT_5f()
-local script = UI["5f"]
-	script.Parent.Visible = false
-end
-task.spawn(SCRIPT_5f)
--- // StarterGui.Dox ur self.Frame.Main.UIStroke.LocalScript \\ --
+task.spawn(SCRIPT_63)
+-- // StarterGui.mobile ver.Frame.TimeZoneFrame.LocalScript \\ --
 local function SCRIPT_65()
 local script = UI["65"]
+	script.Parent.Visible = false
+end
+task.spawn(SCRIPT_65)
+-- // StarterGui.mobile ver.Frame.Main.UIStroke.LocalScript \\ --
+local function SCRIPT_6b()
+local script = UI["6b"]
 	while wait() do
 		script.Parent.Color = Color3.new(255/255,0/255,0/255)
 		for i = 0,255,10 do
@@ -1299,10 +1346,10 @@ local script = UI["65"]
 		end
 	end
 end
-task.spawn(SCRIPT_65)
--- // StarterGui.Dox ur self.Frame.Main.LocalScript \\ --
-local function SCRIPT_67()
-local script = UI["67"]
+task.spawn(SCRIPT_6b)
+-- // StarterGui.mobile ver.Frame.Main.LocalScript \\ --
+local function SCRIPT_6d()
+local script = UI["6d"]
 	local MainFrame = script.Parent.Parent.MainFrame
 	local LocationFrame = script.Parent.Parent.LocationFrame
 	local ConnectionFrame = script.Parent.Parent.ConnectionFrame
@@ -1315,6 +1362,6 @@ local script = UI["67"]
 		TimeZoneFrame.Visible = false
 	end)
 end
-task.spawn(SCRIPT_67)
+task.spawn(SCRIPT_6d)
 
 return UI["1"], require;
