@@ -178,7 +178,7 @@ UI["17"]["Size"] = UDim2.new(0, 746, 0, 50)
 UI["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 UI["17"]["Text"] = [[DOXBIN]]
 UI["17"]["Name"] = [[Title]]
-UI["17"]["Position"] = UDim2.new(-0.38472, 0, -0.0175, 0)
+UI["17"]["Position"] = UDim2.new(-0.3311, 0, -0.02, 0)
 
 -- // StarterGui.mobile ver.Frame.Title.UIStroke \\ --
 UI["18"] = Instance.new("UIStroke", UI["17"])
