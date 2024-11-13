@@ -29,7 +29,7 @@ UI["3"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 UI["3"]["BackgroundTransparency"] = 1
 UI["3"]["Size"] = UDim2.new(0, 200, 0, 50)
 UI["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["3"]["Text"] = [[by belb]]
+UI["3"]["Text"] = [[by belb,special for avtor scripts]]
 UI["3"]["Name"] = [[Credits]]
 UI["3"]["Position"] = UDim2.new(-0.06971, 0, 0.0525, 0)
 
